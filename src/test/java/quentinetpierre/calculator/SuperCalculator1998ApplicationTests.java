@@ -1,5 +1,6 @@
 package quentinetpierre.calculator;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,7 +9,8 @@ public class SuperCalculator1998ApplicationTests {
 
 	static SuperCalculator1998Application calculator;
 
-	public static void beforeClass(){
+	@Before
+	public void beforeClass(){
 		calculator = new SuperCalculator1998Application();
 	}
 
@@ -28,8 +30,8 @@ public class SuperCalculator1998ApplicationTests {
 	}
 
 	@Test
-	public void devide(){
-		assertEquals(calculator.divide(2,1), 1);
+	public void divide(){
+		assertEquals(calculator.divide(4,2), 2);
 	}
 
 }
