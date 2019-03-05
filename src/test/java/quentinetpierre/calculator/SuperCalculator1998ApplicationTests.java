@@ -1,14 +1,13 @@
 package quentinetpierre.calculator;
 
-
 import org.junit.Test;
-import org.junit.Assert;
+import static org.testng.Assert.assertTrue;
 
 public class SuperCalculator1998ApplicationTests {
 
 	@Test
 	public void test(){
-		Assert.assertTrue(true);
+		assertTrue(true);
 	}
 
 }
