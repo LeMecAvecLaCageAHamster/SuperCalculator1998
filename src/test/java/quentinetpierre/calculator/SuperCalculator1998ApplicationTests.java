@@ -33,5 +33,9 @@ public class SuperCalculator1998ApplicationTests {
 	public void divide(){
 		assertEquals(calculator.divide(4,2), 2);
 	}
+	@Test(expected = Exception.class)
+	public void zero_divisiion(){
+		calculator.divide(1,0);
+	}
 
 }
