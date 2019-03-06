@@ -26,7 +26,10 @@ public class SuperCalculator1998ApplicationTests {
 
 	@Test
 	public void multiply(){
-		assertEquals(calculator.multiply(2,2), 4);
+		assertEquals(calculator.multiply(2,1), 2);
+		assertEquals(calculator.multiply(3,-2), -6);
+		assertEquals(calculator.multiply(-4,3), -12);
+		assertEquals(calculator.multiply(-5,-4), 20);
 	}
 
 	@Test
