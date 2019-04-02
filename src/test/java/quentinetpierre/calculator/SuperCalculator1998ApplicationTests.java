@@ -18,6 +18,20 @@ public class SuperCalculator1998ApplicationTests {
 	public void plus(){
 		assertEquals(calculator.plus(1,2), 3);
 	}
+	@Test
+	public void plus_negative(){
+		assertEquals(calculator.plus(-1,2), 1);
+		assertEquals(calculator.plus(1,-2), -1);
+		assertEquals(calculator.plus(-1,-2), -3);
+	}
+	@Test
+	public void plus_zero(){
+		assertEquals(calculator.plus(1,0), 1);
+		assertEquals(calculator.plus(0,2), 2);
+		assertEquals(calculator.plus(-1,0), -1);
+		assertEquals(calculator.plus(0,-2), -2);
+		assertEquals(calculator.plus(0,0), 0);
+	}
 
 	@Test
 	public void minus(){
