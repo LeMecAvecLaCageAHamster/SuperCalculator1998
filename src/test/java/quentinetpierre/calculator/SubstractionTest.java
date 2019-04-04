@@ -58,11 +58,11 @@ public class SubstractionTest {
     // VALUES = ZERO
     @Test
     public void testWithZeroAsFirstParameter(){
-        assertEquals(calculator.minus(0,1), -1);
+        assertEquals(calculator.minus(1,0), 1);
     }
     @Test
     public void testWithZeroAsSecondParameter(){
-        assertEquals(calculator.minus(2,0), 2);
+        assertEquals(calculator.minus(0,2), -2);
     }
     @Test
     public void testWithZeros(){
@@ -86,11 +86,11 @@ public class SubstractionTest {
     }
     @Test
     public void testWithMinIntValueAndZero(){
-        assertEquals(calculator.minus(0, Integer.MAX_VALUE), Integer.MAX_VALUE);
+        assertEquals(calculator.minus(0, Integer.MAX_VALUE), -Integer.MAX_VALUE);
     }
     @Test
     public void testWithMinIntValueAndNegativeValue(){
-        assertEquals(calculator.minus(-Integer.MAX_VALUE, -1), -Integer.MAX_VALUE+1);
+        assertEquals(calculator.minus(1, Integer.MAX_VALUE), -Integer.MAX_VALUE+1);
     }
 
 }
