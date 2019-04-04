@@ -27,7 +27,7 @@ public class SuperCalculator1998Application {
 		return a*b;
 	}
 
-	public int divide(int a, int b){
+	public int divide(Integer a, Integer b){
 		return a/b;
 	}
 
