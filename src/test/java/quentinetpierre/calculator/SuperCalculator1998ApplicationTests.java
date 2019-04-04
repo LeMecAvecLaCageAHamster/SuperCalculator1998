@@ -49,19 +49,4 @@ public class SuperCalculator1998ApplicationTests {
 		assertEquals(calculator.multiply(-5,-4), 20);
 	}
 
-	@Test
-	public void divide_positive(){
-		assertEquals(calculator.divide(4,2), 2);
-	}
-	@Test
-	public void divide_negative(){
-		assertEquals(calculator.divide(4,-2), -2);
-		assertEquals(calculator.divide(-4,2), -2);
-		assertEquals(calculator.divide(-4,-2), 2);
-	}
-	@Test(expected = Exception.class)
-	public void zero_divisiion(){
-		calculator.divide(1,0);
-	}
-
 }
