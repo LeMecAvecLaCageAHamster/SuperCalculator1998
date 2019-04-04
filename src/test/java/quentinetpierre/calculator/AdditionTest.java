@@ -2,6 +2,7 @@ package quentinetpierre.calculator;
 
 import org.junit.Before;
 import org.junit.Test;
+import quentinetpierre.calculator.exceptions.OutOfBoundException;
 
 import java.lang.reflect.Method;
 
@@ -33,10 +34,12 @@ public class AdditionTest {
     }
 
     // TEST TYPE
+    /*
     @Test(expected = Exception.class)
     public void testWithWrongType(){
         calculator.plus("Le reseau de l'imie et bah c'est bien de la merde", 1);
     }
+    */
 
     // BASIC TEST
     @Test
@@ -83,7 +86,7 @@ public class AdditionTest {
     }
 
     // MAX VALUES
-    @Test(expected=Exception.class)
+    @Test(expected = OutOfBoundException.class)
     public void testWithMaxIntValue(){
         calculator.plus(Integer.MAX_VALUE, Integer.MAX_VALUE);
     }
